@@ -6,7 +6,8 @@ desk_lenght = 70 # Длина одного места
 coridor = 100 # В условиях задачи сказано, что проход по центру аудитории составляет 1м
 column = l // desk_width
 rows = (w - coridor) // desk_lenght
-result = int(column * rows - 3)
+result = int(column * rows - 3) # Проход и кафедра мешают разместить 3 места
+
 
 
 print(f'В данную аудиторию встанет {result} мест')
