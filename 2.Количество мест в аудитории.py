@@ -1,0 +1,12 @@
+l = float(input('Введите длину помещения(В метрах): ')) * 100
+w = float(input('Введите ширину помещения(В метрах): ')) * 100
+
+desk_width = 120 # Ширина одного места
+desk_lenght = 70 # Длина одного места
+coridor = 100 # В условиях задачи сказано, что проход по центру аудитории составляет 1м
+column = l // desk_width
+rows = (w - coridor) // desk_lenght
+result = int(column * rows - 3)
+
+
+print(f'В данную аудиторию встанет {result} мест')
